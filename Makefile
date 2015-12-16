@@ -5,6 +5,6 @@ pause: LDFLAGS=-s -nostdlib -Wl,--build-id=none
 install: /usr/local/bin/pause
 
 /usr/local/bin/pause: pause
-	cp $< $@
+	install $< $@
 
 .PHONY: all install
